@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AARTI COMPUTER EDUCATION CENTER - Free online professional resume builder by Sunil Sir.">
+<title>AARTI Resume Builder | By Sunil Sir</title>
+<style>
+:root{--navy:#123c69;--blue:#1769aa;--sky:#eaf4ff;--ink:#18212b;--muted:#637083;--white:#fff;--border:#d9e2ec;--shadow:0 18px 50px rgba(18,60,105,.12)}
+*{box-sizing:border-box} body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:#f5f8fc;color:var(--ink)}
+header{background:linear-gradient(135deg,#0c3158,#1769aa);color:#fff;position:sticky;top:0;z-index:20;box-shadow:0 4px 18px #0002}
+.nav{max-width:1180px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px}.brand-badge{width:44px;height:44px;border-radius:12px;background:#fff;color:var(--navy);display:grid;place-items:center;font-weight:900}
+.brand h1{font-size:18px;margin:0}.brand small{opacity:.8}
+nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:14px}
+.hero{max-width:1180px;margin:38px auto 24px;padding:0 20px;display:grid;grid-template-columns:1.4fr .6fr;gap:28px;align-items:center}
+.hero-card{background:#fff;border:1px solid var(--border);border-radius:24px;padding:38px;box-shadow:var(--shadow)}
+.hero h2{font-size:42px;line-height:1.08;margin:0 0 14px;color:#102f50}.hero p{font-size:17px;color:var(--muted);line-height:1.6}
+.cta{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;padding:13px 20px;border-radius:12px;font-weight:800;margin-top:8px}
+.sir{background:linear-gradient(180deg,#eaf4ff,#fff);border-radius:24px;padding:24px;text-align:center;border:1px solid var(--border)}
+.sir img{width:220px;max-width:100%;display:block;margin:auto;filter:drop-shadow(0 16px 20px #123c6933)}
+.sir h3{margin:8px 0 2px;color:var(--navy)}.sir p{margin:0;color:var(--muted)}
+.section{max-width:1180px;margin:30px auto;padding:0 20px}.section h2{text-align:center;color:#102f50}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.feature{background:#fff;border:1px solid var(--border);border-radius:18px;padding:20px;box-shadow:0 8px 25px #123c6909}.feature b{display:block;margin-bottom:8px}.feature span{color:var(--muted);font-size:14px}
+.builder{max-width:1180px;margin:30px auto 70px;padding:0 20px}.builder-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{background:#fff;border:1px solid var(--border);border-radius:20px;padding:22px;box-shadow:var(--shadow)}
+.panel h2{margin-top:0;color:#102f50}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{font-size:12px;font-weight:800;color:#445368;display:block;margin-bottom:5px}
+input,textarea,select{width:100%;padding:11px 12px;border:1px solid #ccd7e3;border-radius:10px;font:inherit;background:#fff}textarea{min-height:86px;resize:vertical}
+.full{grid-column:1/-1}.section-box{border-top:1px solid var(--border);margin-top:18px;padding-top:18px}
+.row{display:flex;gap:10px;justify-content:flex-end;margin-top:12px;flex-wrap:wrap}.btn{border:0;border-radius:10px;padding:11px 15px;font-weight:800;cursor:pointer}.primary{background:var(--blue);color:#fff}.secondary{background:#eef4f9;color:#183b5b}.danger{background:#fff0f0;color:#a22}
+.preview-wrap{background:#e9eef4;border-radius:16px;padding:15px;overflow:auto}.resume{background:#fff;width:794px;min-height:1123px;margin:auto;padding:42px 46px;color:#20262d;box-shadow:0 4px 18px #0002}.rhead{display:flex;justify-content:space-between;gap:25px;border-bottom:3px solid var(--navy);padding-bottom:18px}.rname{font-size:31px;font-weight:900;color:var(--navy);margin:0 0 5px}.rrole{color:#4d5c6d;font-weight:700}.rcontact{font-size:12px;color:#596675;line-height:1.6}.rphoto{width:105px;height:125px;object-fit:cover;border-radius:8px;border:1px solid #ccd7e3}.rsec{margin-top:19px}.rsec h3{font-size:14px;color:var(--navy);text-transform:uppercase;border-bottom:1px solid #dbe3ea;padding-bottom:5px;margin:0 0 8px}.rsec p,.rsec li{font-size:12px;line-height:1.55;margin:3px 0}.rsec ul{padding-left:18px;margin:4px 0}
+footer{background:#0d2f50;color:#fff;text-align:center;padding:28px 15px;margin-top:30px}footer small{opacity:.8}
+.notice{background:#fff7df;border:1px solid #f0d47a;border-radius:12px;padding:11px 13px;font-size:13px;color:#6d5600;margin-top:12px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.features{grid-template-columns:1fr 1fr}.builder-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.features,.grid{grid-template-columns:1fr}.hero h2{font-size:32px}.nav nav{display:none}.hero-card{padding:25px}.resume{transform-origin:top left}}
+@media print{
+  body{background:#fff}.no-print,header,.hero,.section,.builder .panel:first-child,footer{display:none!important}
+  .builder{margin:0;padding:0}.builder-grid{display:block}.panel{border:0;box-shadow:none;padding:0}.preview-wrap{padding:0;background:#fff}.resume{box-shadow:none;width:794px;margin:0;padding:42px 46px}
+}
+</style>
+</head>
+<body>
+<header class="no-print">
+ <div class="nav">
+  <div class="brand"><div class="brand-badge">A</div><div><h1>AARTI COMPUTER EDUCATION CENTER</h1><small>Professional Resume Builder • By Sunil Sir</small></div></div>
+  <nav><a href="#features">Features</a><a href="#builder">Create Resume</a></nav>
+ </div>
+</header>
+
+<section class="hero no-print">
+ <div class="hero-card">
+  <div style="color:#1769aa;font-weight:900;letter-spacing:.08em;text-transform:uppercase">Free Online Tool</div>
+  <h2>Create Your Professional Resume in Minutes</h2>
+  <p>Students can enter their personal details, education, skills and experience, see a live professional preview and print/save the final resume as PDF.</p>
+  <a class="cta" href="#builder">Create My Resume →</a>
+  <div class="notice">Your entries stay in this browser page and are used only to generate the resume. This starter version does not send student details to a server.</div>
+ </div>
+ <div class="sir">
+   <img src="sunil-sir.png" alt="Sunil Sir">
+   <h3>By Sunil Sir</h3><p>AARTI COMPUTER EDUCATION CENTER</p>
+ </div>
+</section>
+
+<section class="section no-print" id="features">
+ <h2>Why Students Can Use This Resume Builder</h2>
+ <div class="features">
+  <div class="feature"><b>📝 Easy Form</b><span>Simple student-friendly fields for resume details.</span></div>
+  <div class="feature"><b>👀 Live Preview</b><span>See the resume update while typing.</span></div>
+  <div class="feature"><b>📄 PDF Ready</b><span>Use Print / Save as PDF for an A4 resume.</span></div>
+  <div class="feature"><b>🔒 Privacy First</b><span>No account and no server database in this version.</span></div>
+ </div>
+</section>
+
+<section class="builder" id="builder">
+ <div class="builder-grid">
+  <div class="panel no-print">
+   <h2>Build Your Resume</h2>
+   <div class="grid">
+    <div><label>Full Name</label><input id="name" placeholder="Rahul Sharma"></div>
+    <div><label>Job Title / Career</label><input id="role" placeholder="Computer Operator / Fresher"></div>
+    <div><label>Mobile</label><input id="phone" placeholder="+91 98765 43210"></div>
+    <div><label>Email</label><input id="email" placeholder="example@gmail.com"></div>
+    <div class="full"><label>Address</label><input id="address" placeholder="Jaipur, Rajasthan"></div>
+    <div class="full"><label>Career Objective</label><textarea id="objective" placeholder="Write a short professional career objective..."></textarea></div>
+    <div class="full"><label>Education</label><textarea id="education" placeholder="B.Com — University Name — 2026 — 72%&#10;12th — RBSE — 2023 — 78%"></textarea></div>
+    <div class="full"><label>Skills</label><textarea id="skills" placeholder="MS Office, Tally Prime, Excel, Communication"></textarea></div>
+    <div class="full"><label>Experience / Internship</label><textarea id="experience" placeholder="Company Name — Role — Duration&#10;• Responsibility / achievement"></textarea></div>
+    <div class="full"><label>Projects / Certificates</label><textarea id="projects" placeholder="Project or certificate details"></textarea></div>
+    <div><label>Languages</label><input id="languages" placeholder="Hindi, English"></div>
+    <div><label>Date of Birth</label><input id="dob" placeholder="DD-MM-YYYY"></div>
+    <div class="full"><label>Profile Photo (optional)</label><input id="photo" type="file" accept="image/*"></div>
+   </div>
+   <div class="row">
+    <button class="btn secondary" onclick="fillDemo()">Demo Data</button>
+    <button class="btn danger" onclick="clearForm()">Clear</button>
+    <button class="btn primary" onclick="window.print()">Download / Save PDF</button>
+   </div>
+   <p style="font-size:12px;color:#718096;margin-bottom:0">Tip: after clicking Download / Save PDF, choose your browser's “Save as PDF” printer.</p>
+  </div>
+
+  <div class="panel">
+   <div class="preview-wrap">
+    <div class="resume" id="resume">
+      <div class="rhead">
+       <div>
+        <div class="rname" id="p-name">Your Name</div>
+        <div class="rrole" id="p-role">Professional Title</div>
+        <div class="rcontact" id="p-contact">Mobile • Email • Address</div>
+       </div>
+       <img id="p-photo" class="rphoto" src="" alt="" style="display:none">
+      </div>
+      <div class="rsec"><h3>Career Objective</h3><p id="p-objective">Your career objective will appear here.</p></div>
+      <div class="rsec"><h3>Education</h3><p id="p-education">Your education details will appear here.</p></div>
+      <div class="rsec"><h3>Skills</h3><p id="p-skills">Your skills will appear here.</p></div>
+      <div class="rsec"><h3>Experience / Internship</h3><p id="p-experience">Your experience will appear here.</p></div>
+      <div class="rsec"><h3>Projects / Certificates</h3><p id="p-projects">Your projects and certificates will appear here.</p></div>
+      <div class="rsec"><h3>Personal Details</h3><p id="p-personal">Date of Birth: —<br>Languages: —</p></div>
+      <div class="rsec"><h3>Declaration</h3><p>I hereby declare that the information given above is true and correct to the best of my knowledge and belief.</p></div>
+     </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<footer class="no-print">
+ <strong>AARTI COMPUTER EDUCATION CENTER</strong><br>
+ <span>Professional Resume Builder • By Sunil Sir</span><br><br>
+ <small>© 2026 AARTI COMPUTER EDUCATION CENTER. All Rights Reserved.</small>
+</footer>
+
+<script>
+const ids=["name","role","phone","email","address","objective","education","skills","experience","projects","languages","dob"];
+function esc(v){return (v||"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));}
+function lines(v){return esc(v).replace(/\n/g,"<br>");}
+function update(){
+ document.getElementById("p-name").textContent=document.getElementById("name").value||"Your Name";
+ document.getElementById("p-role").textContent=document.getElementById("role").value||"Professional Title";
+ const c=[phone.value,email.value,address.value].filter(x=>x.value).map(x=>esc(x.value)).join(" • ");
+ document.getElementById("p-contact").innerHTML=c||"Mobile • Email • Address";
+ ["objective","education","skills","experience","projects"].forEach(k=>{
+  const v=document.getElementById(k).value;
+  document.getElementById("p-"+k).innerHTML=v?lines(v):"—";
+ });
+ document.getElementById("p-personal").innerHTML="Date of Birth: "+esc(dob.value||"—")+"<br>Languages: "+esc(languages.value||"—");
+}
+ids.forEach(id=>document.getElementById(id).addEventListener("input",update));
+document.getElementById("photo").addEventListener("change",e=>{
+ const f=e.target.files[0], img=document.getElementById("p-photo");
+ if(f){const r=new FileReader();r.onload=()=>{img.src=r.result;img.style.display="block"};r.readAsDataURL(f)}
+});
+function fillDemo(){
+ const d={name:"Rahul Sharma",role:"Computer Operator / Fresher",phone:"+91 98765 43210",email:"rahulsharma@gmail.com",address:"Jaipur, Rajasthan",objective:"To obtain a responsible position where I can use my computer knowledge, communication skills and willingness to learn for the growth of the organization.",education:"B.Com — University of Rajasthan — 2026 — 72%\n12th — RBSE — 2023 — 78%",skills:"MS Office, Tally Prime, Advanced Excel, Internet, Communication",experience:"Fresher\nAvailable for internship and entry-level opportunities.",projects:"RS-CIT Certificate\nTally Prime Course\nMS Office & Excel Training",languages:"Hindi, English",dob:"15-08-2004"};
+ Object.entries(d).forEach(([k,v])=>document.getElementById(k).value=v);update();
+}
+function clearForm(){if(confirm("Clear all entered details?")){ids.forEach(id=>document.getElementById(id).value="");document.getElementById("photo").value="";document.getElementById("p-photo").style.display="none";update();}}
+update();
+</script>
+</body>
+</html>
