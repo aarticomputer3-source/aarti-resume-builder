@@ -1,18 +1,8 @@
-AARTI COMPUTER EDUCATION CENTER - Resume Builder
-=================================================
+AARTI COMPUTER EDUCATION CENTER - Resume & CV Builder
+By Sunil Sir
 
-Files:
-- index.html
-- sunil-sir.png
+Open index.html in Chrome/Edge. This is a client-side builder.
+Features: Resume/CV selection, ready career-objective choices, dynamic education/experience/projects,
+custom sections, live preview, templates, photo, local draft saving and print/save PDF.
 
-How to test:
-1. Keep both files in the same folder.
-2. Double-click index.html.
-3. Fill the form.
-4. Use "Download / Save PDF" and choose "Save as PDF".
-
-How to publish:
-- Upload index.html and sunil-sir.png to any static web host.
-- Then submit the live URL in Google Search Console for indexing.
-
-This version is intentionally client-side: student resume data is not sent to a server.
+This is an original implementation inspired by common resume-builder workflows, not a copy of ResumeGround.
